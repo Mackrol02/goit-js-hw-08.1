@@ -13,7 +13,6 @@ const saveTimeToLocalStorage = throttle(
   1000
 ); // Ustawiony throttle na co najmniej 1 sekundę
 
-// Funkcja do odtwarzania wideo od zapisanego momentu
 function playVideoFromSavedTime() {
   const savedTime = localStorage.getItem(STORAGE_KEY);
   if (savedTime) {
